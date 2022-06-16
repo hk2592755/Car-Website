@@ -1,0 +1,522 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <style>
+  .navbar-b {
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-top: 1.563rem;
+  padding-bottom: 1.563rem;
+}
+
+.navbar-b .navbar-brand {
+  color: #d9232d;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+.navbar-b .dropdown-menu {
+  margin: 1.12rem 0 0;
+  border-radius: 0;
+}
+
+.navbar-b .dropdown-menu .dropdown-item {
+  padding: .7rem 1.7rem;
+  transition: all 500ms ease;
+}
+.navbar-b {
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-top: 1.563rem;
+  padding-bottom: 1.563rem;
+}
+
+.navbar-b.navbar-reduce {
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
+    padding-left: 10px;
+  }
+}
+
+.navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link {
+  color: #d9232d;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {
+  content: '';
+  position: absolute;
+  margin-left: 0px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+@media (min-width: 768px) {
+  .navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {
+    margin-left: 18px;
+  }
+}
+
+.navbar-b.navbar-trans .nav-link:hover, .navbar-b.navbar-reduce .nav-link:hover {
+  color: #1B1B1B;
+}
+
+.navbar-b.navbar-trans .nav-link:hover:before, .navbar-b.navbar-reduce .nav-link:hover:before {
+  width: 35px;
+}
+
+.navbar-b.navbar-trans .nav-link:before {
+  background-color: #d9232d;
+}
+
+.navbar-b.navbar-trans .nav-link:hover {
+  color: #d9232d;
+}
+
+
+.navbar-b .navbar-brand {
+  color: #d9232d;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/*--/ Hamburger Navbar /--*/
+.navbar-toggler {
+  position: relative;
+}
+
+
+
+.navbar-toggler span {
+  display: block;
+  background-color: #d9232d;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 1;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+.body-img{
+  background-image: url('bootstrap/home/range2.png');
+  margin-left: 40px;
+  background-size: auto;
+ height: 500px;
+ background-repeat: no-repeat;
+}
+#footer {
+  background: #4a5562;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #515d6a;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #d9232d;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: white;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #d9232d;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: #df3740;
+}
+
+        </style>
+    </head>
+    <body>
+      <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll" href="page-top"><img src="bootstrap/home/mylogo.png" style="width: 80px;height: 70px;"><small>carKing</small></a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="brands.html">OurBrands</a>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link js-scroll" href="range.html">Range</a>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link js-scroll" href="preowned.html">PreOwned</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="body-img" class="img-responsive">
+      </div>
+      <h1 style="font-family: cursive; color:black;text-align: center; font-size: 80;">OUR RANGE</h1><hr><br>
+      <h1 style="font-family: cursive; color:black;text-align: center; font-size: 60;">SEDAN</h1>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination" style="justify-content: center;">
+          
+          <li class="page-item"><a class="page-link" href="range.html">SMALL CARS 9</a></li>
+          <li class="page-item"><a class="page-link" href="sedan.html">SEADAN 9</a></li>
+          <li class="page-item"><a class="page-link" href="jeeps.html">JEEPS 6</a></li>
+          <li class="page-item">
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="row" style="margin:20px ;">
+        <div class="card" style="width: 26rem; margin-left: 40px;">
+            <img src="bootstrap/brand/toyatayaris.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+            <div class="card-body">
+              <h2>Toyota Yaris</h2>
+              <p class="card-text">Toyota Indus has launched the Toyota Yaris in Pakistan. Now the new Toyota Yaris in Pakistan is now available for booking from March 2020.It is a front wheel engine and also available in Pakistan which is compotative in the same class You can purchase Yaris in either 1300cc or 1500cc engine displacements. The prices of Toyota Yaris are Rs. 2,509,000 To 2,999,000
+              </p>
+              <div class="card-footer">
+                <small class="text-success">PKR 2,509,000</small>
+                <a href="#" style="float: right;">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 26rem;margin-left: 5px;">
+            <img src="bootstrap/brand/toyotacorolla.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <h2>Toyota Corolla </h2>
+              <p class="card-text">Toyota Corolla (11th Generation) was launched in Pakistan by the Toyota Indus Motor Company in July 2014. Toyota Corolla 2020 is a front engine front wheel drive Toyota Corolla Altis Grande 1.8 and Toyota Corolla Altis Grande 1.8 CVTi. Toyota Corolla 2020 price in Pakistan is quoted from Rs. 3,219,000 To 3,999,000 which is competitive in the same class models in the market.
+              </p>
+              <div class="card-footer">
+                <small class="text-success">PKR 3,219,000</small>
+                <a href="#" style="float: right;">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 26rem; margin-left: 5px;">
+            <img src="bootstrap/brand/toyotacmry.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+            <div class="card-body">
+              <h2>Toyota Camry</h2>
+              <p class="card-text">Toyota launched the 7th Generation Camry in 2017. Toyota Camry 2020 is a pleasing mix of sweeping curves and chiselled surfaces. The Toyota Camry 2020 features a brand new angular design
+                 it is a front wheel engine and also available in Pakistan  Toyota Camry 2020 price in Pakistan is between Rs. 16,050,000 To 18,630,000
+              </p>
+              <div class="card-footer">
+                <small class="text-success">PKR 16,050,000</small>
+                <a href="#" style="float: right;">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin:20px ;">
+            <div class="card" style="width: 26rem; margin-left: 40px;">
+              <img src="bootstrap/brand/hondacity.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+              <div class="card-body">
+                
+                <h2>Honda City 2020</h2>
+                <p class="card-text">Honda City (5th Generation) was launched on 31st January 2009 by Atlas Honda Cars Pakistan.
+                  Honda City 2020 is available in 2 variants the Honda City i-VTEC and the Honda City Aspire. However, Honda halted the production of Honda City Aspire in 1.3L engine option at the end of 2017.The price of honda City ranges between PKR 2,449,000 To 2,859,000.
+                </p>
+                <div class="card-footer">
+                  <small class="text-success">PKR 2,449,000</small>
+                  <a href="#" style="float: right;">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 26rem;margin-left: 5px;">
+              <img src="bootstrap/brand/hondacivic.jpg" class="card-img-top" alt="..." style="height: 200px;">
+              <div class="card-body">
+                <h2>Honda Civic 2020</h2>
+                <p class="card-text">The 10th Generation Honda Civic introduces a new design.The Honda Civic 2020 is available in 2 variants in Pakistan 1.8 Litre and 1.8-Liter VTI Oriel while globally it is sold in 4 variants 
+                  The Honda Civic 2020 price in Pakistan is between PKR 3,729,000 To 4,699,000.Honda Civic 2020 Facelift Launched in Pakistan
+                </p>
+                <div class="card-footer">
+                  <small class="text-success">PKR 3,729,000</small>
+                  <a href="#" style="float: right;">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 26rem;margin-left: 5px;">
+                <img src="bootstrap/brand/hondaaccrod.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <div class="card-body">
+                  <h2>Honda Accrod 2020</h2>
+                  <p class="card-text">Honda Atlas has launched the 10th Generation Accord for its customers in Pakistan. The company has introduced the car with a new design and with new engine option. Honda Accord 2020 is a front-engine, front-wheel-drive sedan which comes in only one variant. The introductory price of the Honda Accord 2020 is PKR 11,999,000.
+                  </p>
+                  <div class="card-footer">
+                    <small class="text-success">PKR 11,999,000</small>
+                    <a href="#" style="float: right;">Details</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+      <div class="row" style="margin:20px ;">
+        <div class="card" style="width: 26rem;margin-left: 40px;">
+          <img src="bootstrap/home/aqua.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+          <div class="card-body">
+            <h2>Aqua</h2>
+            <p class="card-text">The 1st Generation Toyota aqua was introduced in 2008.The Toyota aqua is also the car that the Aston Martin Cygnet is based upon, it was also named the Japanese car of the year 2008.
+                The price of the Toyota aqua 2017 is not competitive when compared to other cars of the same type.
+            </p>
+            <div class="card-footer">
+              <small class="text-success">PKR 5,130,000</small>
+              <a href="#" style="float: right;">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 26rem; margin-left: 5px;">
+          <img src="bootstrap/home/vitz.jpeg" class="card-img-top" alt="..."  style="height: 200px;">
+          <div class="card-body">
+            <h2> Vitz</h2>
+            <p class="card-text">The 1st Generation of Vitz was launched in 2010 by Pak Suzuki in Pakistan. The Vitz is front engine front wheel drive subcompact car. The Toyota Vitz 2020 is available in 2 variants DLX Navigation and DLX Automatic Navigation. Toyota Vitz 2020 price in Pakistan is  PKR 2,030,000 To 2,210,000
+            </p>
+            <div class="card-footer">
+              <small class="text-success">PKR 2,210,000</small>
+              <a href="#" style="float: right;">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 26rem;margin-left: 5px;">
+          <img src="bootstrap/preowned/passow.jpg" class="card-img-top" alt="..." style="height: 200px;">
+          <div class="card-body">
+            <h2>Passow</h2> 
+            <p class="card-text">Since it is a manual car, and you have a gear lever in the middle of front seats along with the handbrake lever, there is no sofa seat like you will find in most new Kei cars that have automatic gear lever mounted on the dashboard and the parking brake is located in the bottom next to the brake pedal.
+            </p>
+            <div class="card-footer">
+              <small class="text-success">PKR 3,310,000</small>
+              <a href="#" style="float: right;">Details</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-info">
+                  <h3>carKing</h3>
+                  <p>
+                    A108 Adam Street <br>
+                    NY 535022, USA<br><br>
+                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                    <strong>Email:</strong> info@example.com<br>
+                  </p>
+                  <div class="social-links mt-3">
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-square"></i></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="skype"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Online Booking</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Spare Parts</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Financial Support</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Delivery Status</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Fee Air Inflator</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-newsletter">
+                <h4>Our Newsletter</h4>
+                <p>Subscribe our website to send a new notification</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>carKing</span></strong>. All Rights Reserved
+          </div>
+      
+     
+
+
+
+
+        <script src="bootstrap/js/jquery.js"></script>
+          <script src="bootstrap/js/bootstrap.js"></script>
+    </body>
+    </html>

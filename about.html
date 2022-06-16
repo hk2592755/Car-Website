@@ -1,0 +1,758 @@
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    </head>
+        <style>
+  .navbar-b {
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-top: 1.563rem;
+  padding-bottom: 1.563rem;
+}
+
+.navbar-b .navbar-brand {
+  color: #d9232d;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+.navbar-b .dropdown-menu {
+  margin: 1.12rem 0 0;
+  border-radius: 0;
+}
+
+.navbar-b .dropdown-menu .dropdown-item {
+  padding: .7rem 1.7rem;
+  transition: all 500ms ease;
+}
+.navbar-b {
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-top: 1.563rem;
+  padding-bottom: 1.563rem;
+}
+
+.navbar-b.navbar-reduce {
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
+    padding-left: 10px;
+  }
+}
+
+.navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link {
+  color: #d9232d;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {
+  content: '';
+  position: absolute;
+  margin-left: 0px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+@media (min-width: 768px) {
+  .navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {
+    margin-left: 18px;
+  }
+}
+
+.navbar-b.navbar-trans .nav-link:hover, .navbar-b.navbar-reduce .nav-link:hover {
+  color: #1B1B1B;
+}
+
+.navbar-b.navbar-trans .nav-link:hover:before, .navbar-b.navbar-reduce .nav-link:hover:before {
+  width: 35px;
+}
+
+.navbar-b.navbar-trans .nav-link:before {
+  background-color: #d9232d;
+}
+
+.navbar-b.navbar-trans .nav-link:hover {
+  color: #d9232d;
+}
+
+
+.navbar-b .navbar-brand {
+  color: #d9232d;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/*--/ Hamburger Navbar /--*/
+.navbar-toggler {
+  position: relative;
+}
+
+
+
+.navbar-toggler span {
+  display: block;
+  background-color: #d9232d;
+  height: 3px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 1;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+.body{
+  background-image: url('bootstrap/home/about3.jpg');
+  background-size: cover;
+  height:500px;
+}
+.gallery-block{padding-bottom: 60px; padding-top: 60px;}
+.gallery-block .heading{margin-bottom: 50px; text-align: center;}
+
+.gallery-block .heading h2{font-weight: bold;font-size: 1.4rem; text-transform: uppercase;}
+
+.gallery-block.cards-gallery h6{font-size: 17px; font-weight: bold;}
+
+.gallery-block.cards-gallery .card{transition: 0.4s easy;}
+.gallery-block.cards-gallery .card img{box-shadow: 0px 2px 10px rgba(0,0,0,0.15);}
+.gallery-block.cards-gallery .card-body{text-align: center;}
+.gallery-block.cards-gallery .card-body p{font-size: 15px;}
+.gallery-block.cards-gallery a{color:#212529; }
+.gallery-block.cards-gallery a:hover{text-decoration: none;}
+.gallery-block.cards-gallery  .card{
+	margin-bottom: 30px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
+}
+.container1{ width: 1000px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+
+.box1{ width: 300px; height: 400px; position: relative; background: black; box-shadow: 0 30px 30px rgba(0,0,0,.5);}
+
+.box1 .imgbox{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+.box1 .imgbox img{width: 100%;height: 100%;top: 0;left: 0;object-fit:cover;position: absolute;
+    transition: 0.5s;}
+
+.box1 .imgbox:hover img{opacity: 0;}
+
+.box1 .content
+{  position: absolute;bottom: 20px;left: 10%;width: 80%;height: 60px;background: white; transition: 0.5s;overflow: hidden;padding: 15px;box-sizing: border-box;}
+
+.box1:hover .content{width: 100%;height: 100%;bottom: 0;left: 0;}
+
+.box1 .content h3{ margin: 0; padding: 0; font-size: 20px; color: #F55523;}
+
+.box1 .content p{ margin: 10px 0 0;transition: 0.5s;text-align: justify; padding: 0; opacity: 0; line-height: 1.2rem;}
+
+.box1:hover .content p{opacity: 1;transition-delay: 0.5s}  
+#footer {
+  background: #4a5562;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #515d6a;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #d9232d;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: white;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #d9232d;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: #df3740;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+      <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll" href="about.html"><img src="bootstrap/home/mylogo.png" style="width: 80px;height: 70px;"><small>carKing</small></a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="brands.html">OurBrands</a>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link js-scroll" href="range.html">Range</a>
+                
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="preowned.html">PreOwned</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="body class=img-responsive">
+      </div>
+      <div class="container" style="background-color: blanchedalmond;">
+        <h1 style="font-family: monospace; margin-top: 20px; text-align: center;">Get Your Car New Style</h1>
+      <p>From New and Used Sales to Parts and Service,carKing Aims to Provide a Truly Stellar Automotive Experience
+ 
+        There are numerous reasons why drivers choose carKing. Proudly serving Kokomo, Logansport, Fishers IN, Lafayette IN, Peru IN and Marion IN, our teams of sales advisors, service technicians and financing experts are trained with one focus in mind: addressing each of your needs with the utmost respect, care and attention to detail.
+        
+        That means you can expect to learn all of the features of the specific new Toyota RAV4, Corolla, Camry, Honda Accord or Pilot you're interested in. In the market for a used car? Our team will be happy to fill you in on each of the reliable options in our inventory. And when the time comes for you to drive home your next car, our auto finance team is standing by with solutions to fit your individual needs.
+        
+        At Kokomo Auto World, our commitment to excellence does not end with the sale, though. In order to ensure a positive ownership experience, we staff an onsite auto service and repair department. And for those of you who prefer to perform their own work, we also maintain a vast collection of auto parts for sale in Kokomo.
+        
+        carKing truly has every one of your automotive needs covered. The only question left now is how we can best serve you. To take advantage of any one (or more) of our services, be sure to contact us today.</p>
+      </div>
+      <br>
+      
+        <section class="gallery-block cards-gallery">
+          <div class="container">
+            <div class="heading">
+              <h2 style="font-family: cursive; color:black;text-align: center; font-size: 70;">Our UpComing Cars</h2>
+              
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/corolla-cross-cover.jpg"><img src="bootstrap/preowned/corolla-cross-cover.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Toyota Corolla Cross</h6>
+                    <p class="text-muted card-text">Toyota Indus Motors is all set to launch its crossover SUV.Launched Soon </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/Suzuki_Swift_2017.jpg"><img src="bootstrap/preowned/Suzuki_Swift_2017.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Suzuki Swift 2021</h6>
+                    <p class="text-muted card-text">The Suzuki Swift 2021 is a front engine front wheel drive hatchback.Launched Soon</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/honda-7.jpg"><img src="bootstrap/preowned/honda-7.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Honda City 2021</h6>
+                    <p class="text-muted card-text">The company launched this new City with a 3-cylinder 1000cc in Pakistan.Launched Soon</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/72fea9af-2020-toyota-corolla-21.jpg"><img src="bootstrap/preowned/72fea9af-2020-toyota-corolla-21.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Toyota Corolla 2021</h6>
+                    <p class="text-muted card-text">Toyota Corolla 2021 is aggressively designed to stand out among its competitorsnew entrants coming into the Pakistan Market. </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/alto.jpg"><img src="bootstrap/preowned/alto.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Suzuki Alto 2021</h6>
+                    <p class="text-muted card-text">Suzuki Alto 2021 comes with the new TNGA modular platform featuring a more rigidin Pakistan Launched Soon.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/Suzuki_Vitara_2016_Pakistan.jpg"><img src="bootstrap/preowned/Suzuki_Vitara_2016_Pakistan.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Suzuki Vitara 2021</h6>
+                    <p class="text-muted card-text">The Suzuki Vitara comes in Pakistan in two variants, GLX Luanched Soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery-block cards-gallery">
+          <div class="container">
+            <div class="heading">
+              <h2 style="font-family: cursive; color:black;text-align: center; font-size: 70;">Our Recent Cars</h2>
+              
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/cultus.jpg"><img src="bootstrap/preowned/cultus.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Suzuki Cultus</h6>
+                    <p class="text-muted card-text"> Suzuki Cultus 2020 revitalized the whole design framework of Cultus.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/civic1.jpg"><img src="bootstrap/preowned/civic1.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Honda Civic</h6>
+                    <p class="text-muted card-text">Honda Civic  10th Generation 2020 is a front engine, front wheel drive.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/wagnar.png"><img src="bootstrap/preowned/wagnar.png" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Suzuki Wagon-R</h6>
+                    <p class="text-muted card-text"> Suzuki Wagon R 2020 is a front engine front wheel drive hatchback.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/city.jpg"><img src="bootstrap/preowned/city.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Honda City</h6>
+                    <p class="text-muted card-text">The Honda City 5th Generation is a front engine front wheel drive subcompact sedan.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/prius.jpg"><img src="bootstrap/preowned/prius.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Toyota Pirus</h6>
+                    <p class="text-muted card-text">Toyota Prius 2020 comes with the new TNGA modular platform featuring a more rigid.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 transform-on-hover">
+                  <a class="lightbox" href="bootstrap/preowned/fortuner-trd.jpg"><img src="bootstrap/preowned/fortuner-trd.jpg" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h6>Honda Fortuner</h6>
+                    <p class="text-muted card-text">Toyota has launched the new model, 2nd generation of Fortuner in Pakistan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2 style="text-align: center; margin-bottom: 30px; ">Deals Of The Week</h2>
+        <div class="row" style="margin:20px ;">
+          <div class="card" style="width: 26rem; margin-left: 40px;">
+            <img src="bootstrap/preowned/city.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+            <div class="card-body">
+              <div class="card-header">
+                <div class="row">
+                  <div>
+                  <i class="fas fa-tachometer-alt fa-1x"></i>
+                  <small>10,000km</small>
+                  </div>
+                  <div style="margin-left: 2rem;">
+                <i class="fas fa-gas-pump fa-1x" ></i>
+                  <small>Petrol</small>
+                  </div>
+                  <div style="margin-left: 2rem;">
+                    <i class="fas fa-calendar-alt fa-1x" ></i>
+                    <small>2019</small>
+                      </div>
+                      <div style="margin-left: 2rem;">
+                        <i class="fas fa-palette fa-1x"></i>
+                        <small>Grey</small>
+                          </div>
+                          
+              </div>
+              </div>
+              <h3>Honda City</h3>
+              
+              <p class="card-text">Mehran VXR for sale 1st owner certified vehicles 1 year warranty edition cruise control multi media stearing electric heater seats 
+                Mention carKing when calling Seller to get a good deal
+              </p>
+                <p class="text-success">PKR 10.75Lac</p>
+              <div class="card-footer">
+                <small class="text-primary">Sold Out</small>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 26rem;margin-left: 5px;">
+            <img src="bootstrap/civic/swift.jpg" class="card-img-top" alt="..." style="height: 200px;">
+            <div class="card-body">
+              <div class="card-header">
+                <div class="row">
+                  <div>
+                  <i class="fas fa-tachometer-alt fa-1x"></i>
+                  <small>4800km</small>
+                  </div>
+                  <div style="margin-left: 2rem;">
+                <i class="fas fa-gas-pump fa-1x" ></i>
+                  <small>Petrol/CNG</small>
+                  </div>
+                  <div style="margin-left: 2rem;">
+                    <i class="fas fa-calendar-alt fa-1x" ></i>
+                    <small>2020</small>
+                      </div>
+                      <div style="margin-left: 2rem;">
+                        <i class="fas fa-palette fa-1x"></i>
+                        <small>Red</small>
+                          </div>
+                          
+              </div>
+              </div>
+              <h3>Suzuki Swift</h3>
+              
+              <p class="card-text">The Swift is front engine front wheel drive subcompact car.Mention carKing when calling Seller to get a good deal</p>
+                <p class="text-success">PKR 55Lac</p>
+              <div class="card-footer">
+                <small class="text-primary">Sold Out</small>
+              </div>
+            </div>
+          </div>
+              
+          <div class="card" style="width: 26rem;margin-left: 5px;">
+            <img src="bootstrap/civic/wagonr.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+            <div class="card-body">
+              <div class="card-header">
+                <div class="row">
+                  <div>
+                  <i class="fas fa-tachometer-alt fa-1x"></i>
+                  <small>2000km</small>
+                  </div>
+                  <div style="margin-left: 2rem;">
+                <i class="fas fa-gas-pump fa-1x" ></i>
+                  <small>Petrol/CNG</small>
+                  </div>
+                  <div style="margin-left: 2rem;">
+                    <i class="fas fa-calendar-alt fa-1x" ></i>
+                    <small>2020</small>
+                      </div>
+                      <div style="margin-left: 2rem;">
+                        <i class="fas fa-palette fa-1x"></i>
+                        <small>Orange</small>
+                          </div>
+                          </div>
+                          </div>
+                        <h3>Wagon-R</h3>
+              
+                      <p class="card-text">Suzuki Wagon R 2020 is a front engine front wheel drive hatchback. The 1st Generation Suzuki
+                    Mention carKing when calling Seller to get a good deal.</p>
+                      <p class="text-success">PKR 10Lac</p>
+                    <div class="card-footer">
+                    <small class="text-primary">Sold Out</small>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+        <section style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: white; font-family: 'Kalam', cursive;" >
+          <div class="container1">
+            <h1 style="color: black; margin-left: 20%; margin-top: 10%;">OUR SUPPORTER & WORKING TEAM</h1>
+           <div class="box1">
+               <div class="imgbox">
+                   <img src="bootstrap/home/team1.jpg" alt="members">
+               </div>
+               <div class="content">
+                   <h3>JOHN DEO</h3>
+                   <H5 style="color: #23F5C8 ;">co-manager</H5>
+                   <p>Editorial department is your source for automotive news and reviews. In line with Cars.com’s long-standing ethics policy, editors and reviewers don’t accept gifts or free trips from automakers. The Editorial department is independent of Cars.com’s advertising, sales and sponsored content departments.</p>
+               </div>
+           </div>
+           <div class="box1">
+            <div class="imgbox">
+                <img src="bootstrap/home/team2.jpg" alt="members">
+            </div>
+            <div class="content">
+                <h3>DANEIL CRIS</h3>
+                <H5 style="color: #23F5C8;">co-founder</H5>
+                <p>Editorial department is your source for automotive news and reviews. In line with Cars.com’s long-standing ethics policy, editors and reviewers don’t accept gifts or free trips from automakers. The Editorial department is independent of Cars.com’s advertising, sales and sponsored content departments.</p>
+            </div>
+          </div> 
+          <div class="box1">
+            <div class="imgbox">
+                <img src="bootstrap/home/team3.jpg" alt="members">
+            </div>
+            <div class="content">
+                <h3>MRS CHARLEE</h3>
+                <H5 style="color: #23F5C8 ;">co-operator</H5>
+                <p>Editorial department is your source for automotive news and reviews. In line with Cars.com’s long-standing ethics policy, editors and reviewers don’t accept gifts or free trips from automakers. The Editorial department is independent of Cars.com’s advertising, sales and sponsored content departments.</p>
+            </div>
+          </div> 
+          </div>
+          </section>
+          <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+        
+                  <div class="col-lg-3 col-md-6">
+                    <div class="footer-info">
+                      <h3>carKing</h3>
+                      <p>
+                        A108 Adam Street <br>
+                        NY 535022, USA<br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                      </p>
+                      <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-square"></i></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="skype"><i class="fab fa-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Online Booking</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Spare Parts</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Financial Support</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Delivery Status</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#">Fee Air Inflator</a></li>
+                    </ul>
+                  </div>
+        
+                  <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>Subscribe our website to send a new notification</p>
+                    <form action="" method="post">
+                      <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+        
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+        
+            <div class="container">
+              <div class="copyright">
+                &copy; Copyright <strong><span>carKing</span></strong>. All Rights Reserved
+              </div>
+
+
+
+
+
+
+
+
+      
+
+      
+
+
+
+
+
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script>
+          baguetteBox.run('.cards-gallery', {animation: 'slideIn'});
+      </script> 
+    
+    
+      </body>
+
+    </html>
